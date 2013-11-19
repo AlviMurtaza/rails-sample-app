@@ -1,11 +1,11 @@
 <% provide(:title, 'Home') %>
-    <h1>Sample App</h1>
-<ul>
-      <li><a href="help">Help</a></li>
-      <li><a href="about">About Us</a></li>
-</ul>
-    <p>
+<div class="center hero-unit">
+  <h1>Welcome to JSSCHOOL</h1>
+<br>
+    <h2>
       This is the home page for the
-      <a href="http://jsschool.org/">JS School</a>
+      <a href="http://jsschool.org/">JSSchool</a>
       sample application.
-    </p>
+    </h2>
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
