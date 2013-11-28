@@ -1,0 +1,101 @@
+2013-11-25T07:52:57.453789+00:00 app[web.1]:                  AND a.attnum > 0 AND NOT a.attisdropped
+2013-11-25T07:52:58.006784+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brushlands-8144.herokuapp.com fwd="180.87.210.196" dyno=web.1 connect=1ms service=5ms status=304 bytes=0
+2013-11-25T07:56:34.386490+00:00 app[web.1]: Started GET "/signup" for 180.87.210.196 at 2013-11-25 07:56:34 +0000
+2013-11-25T07:56:34.386490+00:00 app[web.1]: Started GET "/signup" for 180.87.210.196 at 2013-11-25 07:56:34 +0000
+2013-11-25T07:56:34.387270+00:00 app[web.1]: Processing by UsersController#new as HTML
+2013-11-25T07:56:34.387270+00:00 app[web.1]: Processing by UsersController#new as HTML
+2013-11-25T07:56:34.389709+00:00 app[web.1]:                                           ^
+2013-11-25T07:56:34.389709+00:00 app[web.1]: :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2013-11-25T07:56:34.389709+00:00 app[web.1]:                   ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2013-11-25T07:56:34.389709+00:00 app[web.1]:                      pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+2013-11-25T07:56:34.389709+00:00 app[web.1]: PG::Error: ERROR:  relation "users" does not exist
+2013-11-25T07:56:34.389709+00:00 app[web.1]: LINE 5:                WHERE a.attrelid = '"users"'::regclass
+2013-11-25T07:56:34.389709+00:00 app[web.1]:                 FROM pg_attribute a LEFT JOIN pg_attrdef d
+2013-11-25T07:56:34.389709+00:00 app[web.1]:                  AND a.attnum > 0 AND NOT a.attisdropped
+2013-11-25T07:56:34.389709+00:00 app[web.1]:                WHERE a.attrelid = '"users"'::regclass
+2013-11-25T07:56:34.389709+00:00 app[web.1]:                ORDER BY a.attnum
+2013-11-25T07:56:34.389863+00:00 app[web.1]:
+2013-11-25T07:56:34.389863+00:00 app[web.1]: LINE 5:                WHERE a.attrelid = '"users"'::regclass
+2013-11-25T07:56:34.389863+00:00 app[web.1]:                                           ^
+2013-11-25T07:56:34.389863+00:00 app[web.1]:                      pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+2013-11-25T07:56:34.389863+00:00 app[web.1]: :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2013-11-25T07:56:34.389863+00:00 app[web.1]:                 FROM pg_attribute a LEFT JOIN pg_attrdef d
+2013-11-25T07:56:34.389863+00:00 app[web.1]:                   ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2013-11-25T07:56:34.389863+00:00 app[web.1]: PG::Error: ERROR:  relation "users" does not exist
+2013-11-25T07:56:34.389863+00:00 app[web.1]:                  AND a.attnum > 0 AND NOT a.attisdropped
+2013-11-25T07:56:34.390008+00:00 app[web.1]:                ORDER BY a.attnum
+2013-11-25T07:56:34.391288+00:00 app[web.1]: ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "users" does not exist
+2013-11-25T07:56:34.390008+00:00 app[web.1]:
+2013-11-25T07:56:34.390008+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
+2013-11-25T07:56:34.390008+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
+2013-11-25T07:56:34.391288+00:00 app[web.1]:
+2013-11-25T07:56:34.391288+00:00 app[web.1]:                                           ^
+2013-11-25T07:56:34.389863+00:00 app[web.1]:                WHERE a.attrelid = '"users"'::regclass
+2013-11-25T07:56:34.391288+00:00 app[web.1]: :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2013-11-25T07:56:34.391288+00:00 app[web.1]:                      pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+2013-11-25T07:56:34.391288+00:00 app[web.1]:                 FROM pg_attribute a LEFT JOIN pg_attrdef d
+2013-11-25T07:56:34.391288+00:00 app[web.1]:                   ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2013-11-25T07:56:34.391288+00:00 app[web.1]:                WHERE a.attrelid = '"users"'::regclass
+2013-11-25T07:56:34.391288+00:00 app[web.1]:                  AND a.attnum > 0 AND NOT a.attisdropped
+2013-11-25T07:56:34.391457+00:00 app[web.1]:                ORDER BY a.attnum
+2013-11-25T07:56:34.391457+00:00 app[web.1]: ):
+2013-11-25T07:56:34.391457+00:00 app[web.1]:   app/controllers/users_controller.rb:8:in `new'
+2013-11-25T07:56:34.391288+00:00 app[web.1]: LINE 5:                WHERE a.attrelid = '"users"'::regclass
+2013-11-25T07:56:34.391457+00:00 app[web.1]:
+2013-11-25T07:56:34.391457+00:00 app[web.1]:
+2013-11-25T07:56:34.391457+00:00 app[web.1]:
+2013-11-25T07:56:34.391457+00:00 app[web.1]: LINE 5:                WHERE a.attrelid = '"users"'::regclass
+2013-11-25T07:56:34.391457+00:00 app[web.1]: :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2013-11-25T07:56:34.391605+00:00 app[web.1]:                      pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+2013-11-25T07:56:34.391605+00:00 app[web.1]:                 FROM pg_attribute a LEFT JOIN pg_attrdef d
+2013-11-25T07:56:34.391457+00:00 app[web.1]: ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "users" does not exist
+2013-11-25T07:56:34.391605+00:00 app[web.1]:                   ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2013-11-25T07:56:34.391605+00:00 app[web.1]:                WHERE a.attrelid = '"users"'::regclass
+2013-11-25T07:56:34.391605+00:00 app[web.1]:                  AND a.attnum > 0 AND NOT a.attisdropped
+2013-11-25T07:56:34.391605+00:00 app[web.1]: ):
+2013-11-25T07:56:34.391605+00:00 app[web.1]:   app/controllers/users_controller.rb:8:in `new'
+2013-11-25T07:56:34.391605+00:00 app[web.1]:
+2013-11-25T07:56:34.391457+00:00 app[web.1]:                                           ^
+2013-11-25T07:56:34.391605+00:00 app[web.1]:
+2013-11-25T07:56:34.391605+00:00 app[web.1]:                ORDER BY a.attnum
+2013-11-25T07:56:34.387371+00:00 heroku[router]: at=info method=GET path=/signup host=damp-brushlands-8144.herokuapp.com fwd="180.87.210.196" dyno=web.1 connect=2ms service=10ms status=500 bytes=1266
+2013-11-25T07:56:34.898516+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brushlands-8144.herokuapp.com fwd="180.87.210.196" dyno=web.1 connect=1ms service=4ms status=304 bytes=0
+2013-11-25T07:56:42.791197+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.2ms)
+2013-11-25T07:56:42.791197+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.2ms)
+2013-11-25T07:56:42.791606+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.1ms)
+2013-11-25T07:56:42.791606+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.1ms)
+2013-11-25T07:56:42.791794+00:00 app[web.1]: Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+2013-11-25T07:56:42.791794+00:00 app[web.1]: Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+2013-11-25T07:56:42.788645+00:00 app[web.1]: Started GET "/" for 180.87.210.196 at 2013-11-25 07:56:42 +0000
+2013-11-25T07:56:42.788645+00:00 app[web.1]: Started GET "/" for 180.87.210.196 at 2013-11-25 07:56:42 +0000
+2013-11-25T07:56:42.792816+00:00 heroku[router]: at=info method=GET path=/ host=damp-brushlands-8144.herokuapp.com fwd="180.87.210.196" dyno=web.1 connect=1ms service=8ms status=304 bytes=0
+2013-11-25T07:56:42.790355+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+2013-11-25T07:56:42.789507+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2013-11-25T07:56:42.789507+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2013-11-25T07:56:42.790355+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+2013-11-25T07:56:43.176238+00:00 heroku[router]: at=info method=GET path=/assets/application-3c55af63b366ea28b04f0584fe7a7671.css host=damp-brushlands-8144.herokuapp.com fwd="180.87.210.196" dyno=web.1 connect=1ms service=4ms status=304 bytes=0
+2013-11-25T07:56:46.378210+00:00 app[web.1]: Started GET "/help" for 180.87.210.196 at 2013-11-25 07:56:46 +0000
+2013-11-25T07:56:46.378210+00:00 app[web.1]: Started GET "/help" for 180.87.210.196 at 2013-11-25 07:56:46 +0000
+2013-11-25T07:56:46.379200+00:00 app[web.1]: Processing by StaticPagesController#help as HTML
+2013-11-25T07:56:46.380081+00:00 app[web.1]:   Rendered static_pages/help.html.erb within layouts/application (0.1ms)
+2013-11-25T07:56:46.380997+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.1ms)
+2013-11-25T07:56:46.381686+00:00 app[web.1]: Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+2013-11-25T07:56:46.381724+00:00 app[web.1]: Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+2013-11-25T07:56:46.379200+00:00 app[web.1]: Processing by StaticPagesController#help as HTML
+2013-11-25T07:56:46.380155+00:00 app[web.1]:   Rendered static_pages/help.html.erb within layouts/application (0.1ms)
+2013-11-25T07:56:46.381430+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.1ms)
+2013-11-25T07:56:46.381038+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.1ms)
+2013-11-25T07:56:46.381430+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.1ms)
+2013-11-25T07:56:46.381321+00:00 heroku[router]: at=info method=GET path=/help host=damp-brushlands-8144.herokuapp.com fwd="180.87.210.196" dyno=web.1 connect=1ms service=9ms status=304 bytes=0
+2013-11-25T07:56:47.408906+00:00 app[web.1]: Started GET "/about" for 180.87.210.196 at 2013-11-25 07:56:47 +0000
+2013-11-25T07:56:47.408906+00:00 app[web.1]: Started GET "/about" for 180.87.210.196 at 2013-11-25 07:56:47 +0000
+2013-11-25T07:56:47.409944+00:00 app[web.1]: Processing by StaticPagesController#about as HTML
+2013-11-25T07:56:47.409944+00:00 app[web.1]: Processing by StaticPagesController#about as HTML
+2013-11-25T07:56:47.411714+00:00 app[web.1]:   Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+2013-11-25T07:56:47.411714+00:00 app[web.1]:   Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+2013-11-25T07:56:47.412801+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.2ms)
+2013-11-25T07:56:47.412801+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.2ms)
+2013-11-25T07:56:47.413116+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.1ms)
+2013-11-25T07:56:47.413416+00:00 app[web.1]: Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+2013-11-25T07:56:47.413116+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.1ms)
+2013-11-25T07:56:47.413416+00:00 app[web.1]: Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
