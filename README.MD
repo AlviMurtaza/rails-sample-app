@@ -1,5 +1,4 @@
 
-
 Things you may want to cover:
 
 * Ruby version
@@ -18,7 +17,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-# Deploy Test
+## Deploy Test:
+
 https://damp-brushlands-8144.herokuapp.com/
 
 
